@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PAYSAM BANK</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg">
+    <div class="container-fluid">
+        <center>
+            <p style="font-style:italic;font-size:40px" class="">WELCOME TO PAYSAM BANK</p>
+        </center>
+    </div>
+    <div class="row bg-dark">
+        <a class="nav-link" href="index.html" style="color: white">HOME</a>
+        <a class="nav-link" href="NewAccount.html" style="color: white">REGISTRATION</a>
+        <a class="nav-link" href="Withdraw.html" style="color: white">WITHDRAW</a>
+        <a class="nav-link" href="Deposit.html" style="color: white">DEPOSIT</a>
+        <a class="nav-link" href="FundTransfer.html" style="color: white">FUND TRANSFER</a>
+        <a class="nav-link" href="CheckBalance.html" style="color: white">Check Balance</a>
+        <a class="nav-link" href="DisplayDetails.html" style="color: white">DETAILS</a>
+    </div>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="FirstName" class="mb-2 mr-sm-2">First Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="FirstName" placeholder="Enter First Name" required>
+            <label for="LastName" class="mb-2 mr-sm-2">Last Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="LastName" placeholder="Enter Last Name" required>
+            <label for="Mobile No" class="mb-2 mr-sm-2">Mobile No</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="MobileNo" placeholder="Enter Mobile No" required
+                pattern="[0-9]{10}">
+            <label for="Email" class="mb-2 mr-sm-2">Email</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="Email" placeholder="Enter Email" required>
+            <label for="DOB" class="mb-2 mr-sm-2">Date Of Birth</label>
+            <input type="date" class="form-control mb-2 mr-sm-2" id="DOB" placeholder="Enter Date of Birth">
+            <label for="FirstName" class="mb-2 mr-sm-2">Permanent Address</label>
+            <input type="textarea" class="form-control mb-2 mr-sm-2" id="PAddress" placeholder="Enter Address" required>
+            <label for="Gender" class="mb-2 mr-sm-2">Gender : </label> &nbsp;
+            <input type="radio" name="Gender">Male &nbsp;&nbsp;
+            <input type="radio" name="Gender">Female &nbsp;&nbsp;
+            <input type="radio" name="Gender">Other
+            <br>
+            <label for="AccountType" class="mb-2 mr-sm-2">Select Type Account : </label>&nbsp;
+            <select>
+
+                <option value="Current">Current</option>
+                <option value="Saving">Saving</option>
+
+            </select>
+
+            <div class="form-check mb-2 mr-sm-2">
+                <label class="form-check-label">
+                    <input class="form-check-input " type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
